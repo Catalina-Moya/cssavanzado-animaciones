@@ -1,0 +1,381 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+
+.content {
+    display: grid;
+}
+
+nav {
+    grid-area: nav;
+    padding: 10px;
+}
+
+main {
+    grid-area: main;
+    background-color: black;
+}
+
+footer {
+    grid-area: footer;
+    padding: 10px;
+    color: black;
+    background-color: rgb(255, 30, 0);
+}
+
+
+@media (max-width: 576px) {
+    .content {
+        grid-template-areas:
+            "nav"
+            "main"
+            "footer";
+
+        min-height: 100vh;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .sidebar-links {
+        display: none;
+    }
+
+}
+
+@media (min-width: 577px) {
+
+    .content {
+        grid-template-areas:
+            "nav main"
+            "nav main"
+            "nav footer";
+
+        min-height: 100vh;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: auto 1fr;
+    }
+}
+
+.sidebar-header img {
+    width: 100px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.914);
+    padding: 25px 20px;
+    flex-direction: column;
+}
+
+.sidebar-header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: aliceblue;
+    margin-left: 23px;
+}
+
+.sidebar-links h4 {
+    color: aliceblue;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.sidebar-links li a {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    gap: 0 30px;
+    font-weight: 500;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.sidebar-links {
+    list-style: none;
+    margin-top: 20px;
+}
+
+
+.sidebar-links li a:hover {
+    background-color: rgba(128, 128, 128, 0.607);
+    color: aliceblue;
+    border-radius: 4px;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 10px;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    color: aliceblue;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.header-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.header-content h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.direccion-correo {
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.direccion-correo input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.direccion-correo button {
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 15px 30px;
+}
+
+.hero {
+    font-size: 12px;
+    padding: 35px;
+    min-height: 58.82em;
+    background: url(../img/avengerendgame.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+
+.hero .header-content {
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.hero .titulo {
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 20px;
+}
+
+.hero .descripcion {
+    font-size: 1em;
+    line-height: 1.25em;
+}
+
+
+
+.hero .hero-btn {
+    background-color: rgba(0, 0, 0, 0.784);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 15px;
+
+    transition: all 1s;
+}
+
+.hero .hero-btn:hover {
+    background-color: rgba(255, 255, 255, 0.914);
+    color: black;
+}
+
+.hero .hero-btn i {
+    margin-right: 5px;
+}
+
+.img {
+    top: 845px;
+    left: 731px;
+    width: 399px;
+    height: 237px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card {
+    position: relative;
+    max-width: 300px;
+    height: 170px;
+    background-color: #33333387;
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 50px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.container .card:hover {
+    height: 450px;
+}
+
+.container .card .card-img {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.container .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.container .card .card-p {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    padding: 10px;
+}
+
+.container .card:hover .card-p {
+    opacity: 1;
+    margin-top: 0;
+}
+
+.container .card .card-p h3  {
+    margin-bottom: 40px; 
+}
+
+
+.container .card-btn {
+    background-color: rgba(0, 0, 0, 0.784);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+    transition: all 1s;
+}
+
+.container .card-btn:hover {
+    background-color: rgba(255, 255, 255, 0.914);
+    color: black;
+}
+
+.container .card-btn i {
+    margin-right: 5px;
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.site-footer h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.site-footer p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links li a:hover {
+    color: #aaa;
+}
+
+.site-footer form {
+    margin-top: 20px;
+}
+
+.site-footer input[type="email"] {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.site-footer button[type="submit"] {
+    padding: 8px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.site-footer button[type="submit"]:hover {
+    background-color: #e04113;
+}

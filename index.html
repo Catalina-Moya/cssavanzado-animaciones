@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/6125cc4e6d.js" crossorigin="anonymous"></script>
+    <link <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Animaciones en CSS</title>
+</head>
+
+<body>
+    <p id="home"></p>
+    <div class="content">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <img src="./assets/img/logo.png" alt="logo">
+            </div>
+            <ul class="sidebar-links">
+                <h4>
+                    <span>Menu</span>
+                </h4>
+                <li>
+                    <a href="#home">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#inicio">
+                        <span class="material-symbols-outlined">
+                            output
+                        </span>
+                        <p>Inicio</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#favoritos">
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                        <p>Favoritos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#final">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <p>Final</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="header">
+                <div class="btn">
+                    <button>Español</button>
+                    <button>Iniciar Sesion</button>
+                </div>
+                <div class="header-content">
+                    <h1>Todas las películas y series que desees.</h1>
+                    <h3>Disfruta cuando quieras, cancela cuando quieras.</h3>
+                    <p>¿Quieres ver algo ya?, Escribe tu dirección de correo.</p>
+                    <form class="direccion-correo">
+                        <input type="correo" placeholder="direccion correo" required>
+                        <button type="submit">Empezar</button>
+                    </form>
+                </div>
+            </div>
+            <p id="inicio"></p>
+            <div class="hero">
+                <div class="hero-content">
+                    <h3 class="titulo">Avengers: Endgame</h3>
+                    <p class="descripcion">Después de los eventos devastadores de "Avengers: Infinity War", el universo está en ruinas debido a las acciones de Thanos, <br> el Titán Loco. Con la ayuda de los aliados que quedaron, los Vengadores deberán reunirse una vez más para intentar <br> detenerlo y restaurar el orden en el universo de una vez por todas.</p>
+                    <button role="button" class="hero-btn"><i class="fa-solid fa-play"></i> Reproducir</button>
+                    <button role="button" class="hero-btn"><i class="fa-solid fa-plus"></i> Añadir a Lista</button>
+                </div>
+            </div>
+            <p id="favoritos"></p>
+            <div class="container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/img/strangerthing.jpg" alt="">
+                    </div>
+                    <div class="card-p">
+                        <h3>Stranger Things</h3>
+                        <h5>2016 ‧ Terror ‧ 4 temporadas</h5>
+                        <p>se centra en un verano “típico” en Hawkins con el grupo de amigos intentando rehacer su vida
+                            cuando un descubrimiento de Dustin en una emisión de la radio pone en peligro las vidas de
+                            todos. Ahora, todos tendrán que reunir sus fuerzas para luchar contra el Azotamentes, cuya
+                            fuerza crece por momentos, y evitar que el mundo peligre.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/img/niunamas.jpg" alt="">
+                    </div>
+                    <div class="card-p">
+                        <h3>Ni una Más</h3>
+                        <h5>2024 ‧ Drama ‧ 1 temporada</h5>
+                        <p>La trama sigue a Alma, una estudiante de 17 años que está a punto de terminar el
+                            bachillerato. Junto a sus amigas Greta y Nata, Alma navega los desafíos típicos de la
+                            adolescencia, incluyendo relaciones tóxicas y conflictos familiares.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/img/sweettooth.jpg" alt="">
+                    </div>
+                    <div class="card-p">
+                        <h3>Sweet Tooth</h3>
+                        <h5>2021 ‧ Aventura ‧ 3 temporadas</h5>
+                        <p>En una épica aventura por un mundo posapocalíptico, un adorable niño mitad humano y mitad
+                            venado busca a su familia y un hogar acompañado de un arisco protector. </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/img/shrek.jpg" alt="">
+                    </div>
+                    <div class="card-p">
+                        <h3>Shrek 2</h3>
+                        <h5>2004 ‧ Infantil/Comedia ‧ 1h 33m</h5>
+                        <p>Cuando Shrek y la princesa Fiona regresan de su luna de miel, los padres de ella los invitan
+                            a visitar el reino de Muy Muy Lejano para celebrar la boda. Para Shrek, al que nunca
+                            abandona su fiel amigo Asno, esto constituye un gran problema.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/img/theamazingspiderman.jpg" alt="">
+                    </div>
+                    <div class="card-p">
+                        <h3>The Amazing Spider-Man</h3>
+                        <h5>2012 ‧ Acción/Ciencia ficción ‧ 2h 16m</h5>
+                        <p>Durante una visita a un laboratorio científico, será picado por una extraña araña sometida a
+                            diversos experimentos genéticos. A partir de ese momento, el cuerpo de Peter comenzará a
+                            cambiar, y pronto se dará cuenta de las increíbles acciones que puede llevar a cabo con su
+                            nueva fisonomía, convirtiéndose en Spiderman.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/img/adosmetrosdeti.jpg" alt="">
+                    </div>
+                    <div class="card-p">
+                        <h3>A dos metros de ti</h3>
+                        <h5>2019 ‧ Romance/Drama ‧ 1h 57m</h5>
+                        <p>Cuando la vida te separa, lucha por cada centímetro. Will y Stella son dos adolescentes que
+                            padecen fibrosis quística y están ingresados en el hospital para tratarse. Aunque ambos
+                            tratan de refugiarse en su propio mundo, de forma inevitable acaban enamorándose.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/img/mazerunnerthescorchtrials.jpg" alt="">
+                    </div>
+                    <div class="card-p">
+                        <h3>Maze Runner: correr o morir</h3>
+                        <h5>2014 ‧ Ciencia ficción/Acción ‧ 1h 53m</h5>
+                        <p>Thomas es un adolescente cuya memoria fue borrada y que ha sido encerrado junto a otros
+                            chicos de su edad en un laberinto plagado de monstruos y misterios. Para sobrevivir, tendrá
+                            que adaptarse a las normas y a los demás habitantes del laberinto.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/img/swat.jpg" alt="">
+                    </div>
+                    <div class="card-p">
+                        <h3>S.W.A.T</h3>
+                        <h5>2017 ‧ Acción ‧ 7 temporadas</h5>
+                        <p>La trama se centra en el Sargento Daniel "Hondo" Harrelson que es ascendido a líder de su
+                            equipo S.W.A.T. y este nuevo cargo le complica mucho las cosas, ya que Jessica Cortez, con
+                            la que mantiene una relación en secreto, pasa a ser su inmediata superior.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/img/peakyblinders.jpg" alt="">
+                    </div>
+                    <div class="card-p">
+                        <h3>Peaky Blinders</h3>
+                        <h5>2013 ‧ Drama ‧ 6 temporadas</h5>
+                        <p>Peaky Blinders es un drama de BBC que narra la historia de la familia gitana Shelby y su
+                            banda de gángsters, un grupo de personas características por sus boinas con cuchillas y
+                            dueñas de los asuntos ilegales, que dominan las apuestas clandestinas y se rigen mediante
+                            extorsiones.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Contacto</h3>
+                        <p>
+                            Dirección: Av. Ejemplo #123<br>
+                            Ciudad, País<br>
+                            Teléfono: +00000000<br>
+                            Email: info@ejemplo.com
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Redes Sociales</h3>
+                        <ul class="social-links">
+                            <li><a href="" target="_blank">Facebook</a></li>
+                            <li><a href="" target="_blank">Twitter</a></li>
+                            <li><a href="" target="_blank">Instagram</a></li>
+                            <li><a href="" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+
+                        <p>Suscríbete a nuestra página para recibir noticias y actualizaciones</p>
+                        <form action="#" method="post">
+                            <input type="email" name="email" placeholder="Tu correo electrónico">
+                            <button type="submit">Suscribir</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <p id="final"></p>
+    </div>
+</body>
+</html>
